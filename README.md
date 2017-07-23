@@ -9,7 +9,11 @@ Happy to accept improvements via pull requests!
 
 #### Model and firmware info
 Device name: B618s-22d
+
 Hardware version: WL1B610FM
+
 Software version: 11.185.01.01.104
+
 Web UI version: 21.100.26.00.0
+
 
