@@ -1,6 +1,11 @@
 # b618reboot
+
+Please note this script was written for  __Python 3 and higher.__
+
 #### About
 Simple Python script for rebooting Huawei B618 LTE router via web interface.
+
+
 
 My router occasionally drops the LTE connection (whilst still responding on the LAN interface) and the quick fix is to reboot the device using its web interface. Which was ok for a while, but as I was going on holiday and wanted to keep thr LTE connection running to have access to the security camera, I decided to quickly write a script which I could run from cron on my home Linux server to trigger the reboot when the connection goes down. 
 
