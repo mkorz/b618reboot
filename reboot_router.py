@@ -50,7 +50,7 @@ def get_client_proof(clientnonce, servernonce, password, salt, iterations):
     client_proof = bytearray()
     i = 0
     while i < client_key.digest_size:
-        client_proof.append(client_key_digest[i] ^ signature_digest[i])
+        client_proof.append(ord(client_key_digest[i]) ^ ord(signature_digest[i]))
         i = i + 1
 
     return hexlify(client_proof)
