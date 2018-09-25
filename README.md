@@ -3,7 +3,7 @@
 Please note this script was written for  __Python 3 and higher.__
 
 #### About
-Simple Python script for rebooting Huawei B618 LTE router via web interface.
+Simple Python script for rebooting Huawei B618 and B715 LTE router via web interface.
 
 
 
@@ -13,12 +13,10 @@ It is not pretty (sorry!) but it does the job for me. It might work with other H
 Happy to accept improvements via pull requests!
 
 #### Model and firmware info
-Device name: B618s-22d
 
-Hardware version: WL1B610FM
-
-Software version: 11.185.01.01.104
-
-Web UI version: 21.100.26.00.0
-
-
+|                   | B618             | B715             |
+| :---              | :---:            | :---:            |
+| Device name:      | B618s-22d        | B715s-23c        |
+| Hardware version: | WL1B610FM        | WL1B610FM05      |
+| Software version: | 11.185.01.01.104 | 11.195.03.01.965 |
+| Web UI version:   | 21.100.26.00.0   | 21.100.39.00.03  |
