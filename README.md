@@ -14,9 +14,9 @@ Happy to accept improvements via pull requests!
 
 #### Model and firmware info
 
-|                   | B618             | B715             |
-| :---              | :---:            | :---:            |
-| Device name:      | B618s-22d        | B715s-23c        |
-| Hardware version: | WL1B610FM        | WL1B610FM05      |
-| Software version: | 11.185.01.01.104 | 11.195.03.01.965 |
-| Web UI version:   | 21.100.26.00.0   | 21.100.39.00.03  |
+|                   | B618             | B715             |B525             |
+| :---              | :---:            | :---:            |:----:           |
+| Device name:      | B618s-22d        | B715s-23c        |B525s-65a        |
+| Hardware version: | WL1B610FM        | WL1B610FM05      |WL2B520M         |
+| Software version: | 11.185.01.01.104 | 11.195.03.01.965 |11.189.63.00.74  |
+| Web UI version:   | 21.100.26.00.0   | 21.100.39.00.03  |21.100.44.00.03  |
