@@ -98,11 +98,11 @@ def login(client, server, user, password):
 def reboot(client, server, user, password):
     """ reboots the router :) """
     verification_token = login(client, server, user, password)
-    url = "http://%s/api/device/control" % server
+    url = "http://%s/api/net/reconnect" % server
     headers = {'Content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
                '__RequestVerificationToken': verification_token}
     client.post(
-        url, data='<?xml version:"1.0" encoding="UTF-8"?><request><Control>1</Control></request>', headers=headers)
+        url, data='<?xml version="1.0" encoding="UTF-8"?><request><ReconnectAction>1</ReconnectAction></request>', headers=headers)
 
 
 def main():
