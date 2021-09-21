@@ -101,8 +101,14 @@ def reboot(client, server, user, password):
     url = "http://%s/api/net/reconnect" % server
     headers = {'Content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
                '__RequestVerificationToken': verification_token}
-    client.post(
+    response = client.post(
         url, data='<?xml version="1.0" encoding="UTF-8"?><request><ReconnectAction>1</ReconnectAction></request>', headers=headers)
+
+    if response.status_code!=200 or not "<response>OK</response>" in response.text.lower():
+        print("reconnect failed, executing reboot")
+        sleep(1)
+        url = "http://%s/api/device/control" % server
+        client.post(url, data='<?xml version:"1.0" encoding="UTF-8"?><request><Control>1</Control></request>', headers=headers)
 
 
 def main():
