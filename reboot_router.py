@@ -114,6 +114,9 @@ def reboot(client, server, user, password):
 def main():
     """ main method """
     client = requests.Session()
+    if len(PASSWORD)>32:
+        print("password is longer than 32 characters, please ensure this is supported by your router, otherwise script will fail")
+
     reboot(client, ROUTER, USER, PASSWORD)
 
 

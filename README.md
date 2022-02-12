@@ -11,7 +11,7 @@ It is not pretty (sorry!) but it does the job for me. It might work with other H
 Happy to accept improvements via pull requests!
 
 #### Usage
-Update settings in the `config.py` file and run the `reboot_router.py` script for the immediate reboot.
+Update settings in the `config.py` file and run the `reboot_router.py` script for the immediate reboot. Please note some routers (B618s, B818-623) do not support passwords longer than 32 characters. 
 
 Thanks to [@gsdefender](https://github.com/gsdefender) there is also a script to reboot the router only if there is no connectivity (tested by an attempt to open TCP connection to the host and port of your choice - by default: 8.8.8.8:53): run `reboot_router_if_no_connection_background.sh` (or `reboot_router_if_no_connection.py`).
 
