@@ -8,7 +8,7 @@ import hmac
 from time import sleep
 from binascii import hexlify
 import requests
-from config import ROUTER, USER, PASSWORD
+from config import ROUTER, USER, PASSWORD, KEEP_ALIVE
 
 
 def generate_nonce():
@@ -114,6 +114,9 @@ def reboot(client, server, user, password):
 def main():
     """ main method """
     client = requests.Session()
+    if not KEEP_ALIVE:
+        client.headers["Connection"] = "close"
+    
     if len(PASSWORD)>32:
         print("password is longer than 32 characters, please ensure this is supported by your router, otherwise script will fail")
 

@@ -8,3 +8,6 @@ TEST_HOST = '8.8.8.8'
 TEST_PORT = 53
 TEST_TIMEOUT = 3
 CHECK_TIMEOUT = 60
+
+# set to False to disable default behaviour of requests to keep connection open.
+KEEP_ALIVE = True
